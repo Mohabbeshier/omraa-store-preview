@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Filter permutations are infinite and thin; let crawlers spend their budget
+# on the products themselves.
+Disallow: /shop?*
+Disallow: /*?q=*
+
+Sitemap: https://mohabbeshier.github.io/omraa-store-preview/sitemap.xml
