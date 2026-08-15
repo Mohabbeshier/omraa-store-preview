@@ -1,0 +1,80 @@
+1:"$Sreact.fragment"
+8:I[441,["219","static/chunks/app/global-error-c1f44b123adaff0b.js"],"default"]
+:HL["/omraa-store-preview/_next/static/css/2c4691a1a272cbbb.css","style"]
+2:T4d9,
+#boot{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;
+align-items:center;justify-content:center;gap:14px;background:#f7f2ee;color:#20242e;
+transition:opacity .38s ease,visibility .38s ease}
+#boot.is-done{opacity:0;visibility:hidden;pointer-events:none}
+#boot .boot-mark{width:64px;height:64px}
+#boot .boot-mark svg{width:100%;height:100%}
+#boot .boot-heel{stroke-dasharray:230;stroke-dashoffset:230;
+animation:boot-draw 1.1s cubic-bezier(.22,.61,.36,1) forwards}
+#boot .boot-word{margin:0;font-family:Alexandria,system-ui,sans-serif;font-size:20px;
+font-weight:700;letter-spacing:0;opacity:0;animation:boot-in .5s ease .45s forwards}
+#boot .boot-bar{width:112px;height:2px;border-radius:2px;background:#e7e0d8;overflow:hidden}
+#boot .boot-bar span{display:block;width:40%;height:100%;border-radius:2px;background:#e8490f;
+animation:boot-slide 1s ease-in-out infinite}
+@keyframes boot-draw{to{stroke-dashoffset:0}}
+@keyframes boot-in{to{opacity:1}}
+@keyframes boot-slide{0%{transform:translateX(-100%)}100%{transform:translateX(320%)}}
+@media (prefers-reduced-motion:reduce){
+  #boot .boot-heel,#boot .boot-word,#boot .boot-bar span{animation:none}
+  #boot .boot-heel{stroke-dashoffset:0}#boot .boot-word{opacity:1}
+}3:T47a,
+try{if(sessionStorage.getItem('omraa_booted')){
+var s=document.createElement('style');s.textContent='#boot{display:none!important}';
+document.head.appendChild(s);}}catch(e){}
+/* No DOM surgery on React-owned nodes: the splash is hidden by React itself. */
+
+/* A tab left open across a redeploy asks for script files that no longer
+   exist, and the app dies with an error the customer cannot act on. Catch
+   that specific failure and reload once — the browser then fetches the
+   current build and she carries on. Guarded so it can never loop. */
+(function(){
+  function stale(m){return /chunk|dynamically imported|Importing a module script failed/i.test(String(m||''));}
+  function recover(){
+    try{ if(sessionStorage.getItem('omraa_recovered')==='1') return; 
+         sessionStorage.setItem('omraa_recovered','1'); }catch(e){}
+    location.reload();
+  }
+  window.addEventListener('error', function(e){
+    if(stale(e && e.message) || (e && e.target && e.target.tagName==='SCRIPT')) recover();
+  }, true);
+  window.addEventListener('unhandledrejection', function(e){
+    if(stale(e && e.reason && e.reason.message)) recover();
+  });
+})();0:{"P":null,"b":"0jDm9hIn43ERMZaJk3skK","p":"/omraa-store-preview","c":["","order",""],"i":false,"f":[[["",{"children":["order",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/omraa-store-preview/_next/static/css/2c4691a1a272cbbb.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ar","dir":"rtl","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"ShoeStore\",\"name\":\"الأمراء\",\"description\":\"متخصصون في الجزم الحريمي بالمقاسات الكبيرة من ٤١ لـ ٤٥.\",\"foundingDate\":\"1997\",\"telephone\":\"+201035318747\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"وسط البلد\",\"addressRegion\":\"القاهرة\",\"addressCountry\":\"EG\"},\"currenciesAccepted\":\"EGP\",\"paymentAccepted\":\"Cash on delivery\",\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"10:00\",\"closes\":\"00:00\"}]}"}}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$3"}}]]}],"$L4"]}]]}],{"children":["order","$L5",{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+9:I[3712,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+a:I[8023,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"SiteProvider"]
+b:I[8106,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+c:I[6577,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"LangProvider"]
+d:I[3566,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"ToastProvider"]
+e:"$Sreact.suspense"
+f:I[9685,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+10:I[3871,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+11:I[4299,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+12:I[9766,[],""]
+13:I[9269,["619","static/chunks/619-ba102abea3e3d0e4.js","39","static/chunks/app/error-f8062bedb5612e40.js"],"default"]
+14:I[8924,[],""]
+15:I[6660,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","345","static/chunks/app/not-found-64a01b81acbddf0e.js"],"default"]
+16:I[885,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+17:I[8982,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+18:I[9964,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","831","static/chunks/831-ba998b795021e809.js","177","static/chunks/app/layout-5f0fb1624f4e400e.js"],"default"]
+19:I[1959,[],"ClientPageRoot"]
+1a:I[9327,["619","static/chunks/619-ba102abea3e3d0e4.js","577","static/chunks/577-0b74a255bebfca29.js","69","static/chunks/app/order/page-de9c2c73e0b8771d.js"],"default"]
+1d:I[4431,[],"OutletBoundary"]
+1f:I[5278,[],"AsyncMetadataOutlet"]
+21:I[4431,[],"ViewportBoundary"]
+23:I[4431,[],"MetadataBoundary"]
+4:["$","body",null,{"children":[["$","$L9",null,{}],["$","$La",null,{"children":[["$","$Lb",null,{}],["$","$Lc",null,{"children":["$","$Ld",null,{"children":[["$","$e",null,{"fallback":null,"children":["$","$Lf",null,{}]}],["$","$L10",null,{}],["$","$e",null,{"fallback":null,"children":["$","$L11",null,{}]}],["$","$L12",null,{"parallelRouterKey":"children","error":"$13","errorStyles":[],"errorScripts":[],"template":["$","$L14",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L15",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L16",null,{}],["$","$L17",null,{}],["$","$L18",null,{}]]}]}]]}]]}]
+5:["$","$1","c",{"children":[null,["$","$L12",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L14",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+6:["$","$1","c",{"children":[["$","$L19",null,{"Component":"$1a","searchParams":{},"params":{},"promises":["$@1b","$@1c"]}],null,["$","$L1d",null,{"children":["$L1e",["$","$L1f",null,{"promise":"$@20"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$L21",null,{"children":"$L22"}],null],["$","$L23",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$L24"}]}]}]]}]
+1b:{}
+1c:"$6:props:children:0:props:params"
+22:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#f7f2ee"}]]
+1e:null
+25:I[622,[],"IconMark"]
+20:{"metadata":[["$","title","0",{"children":"الأمراء — أحذية نسائية بمقاسات من ٤١ إلى ٤٥ | منذ ١٩٩٧"}],["$","meta","1",{"name":"description","content":"متخصصون في الأحذية النسائية بالمقاسات الكبيرة من ٤١ إلى ٤٥، جلد طبيعي بقاعدة مريحة. فرعنا في وسط البلد منذ ١٩٩٧. شحن لكل المحافظات، الدفع عند الاستلام، وتبديل خلال ١٤ يومًا."}],["$","meta","2",{"name":"keywords","content":"جزم حريمي مقاسات كبيرة,احذية نسائية مقاسات كبيرة,مقاس ٤٢ حريمي,مقاس ٤٣ حريمي,مقاس ٤٤ حريمي,مقاس ٤٥ حريمي,جزم مقاسات كبيرة مصر,جزم حريمي جلد طبيعي,جزم طبي حريمي,الدفع عند الاستلام,الأمراء وسط البلد,الأمراء"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://mohabbeshier.github.io/omraa-store-preview/"}],["$","meta","5",{"property":"og:title","content":"الأمراء — أحذية نسائية بمقاسات من ٤١ إلى ٤٥"}],["$","meta","6",{"property":"og:description","content":"أحذية نسائية بالمقاسات الكبيرة من ٤١ إلى ٤٥. جلد طبيعي، شحن لكل المحافظات، والدفع عند الاستلام."}],["$","meta","7",{"property":"og:locale","content":"ar_EG"}],["$","meta","8",{"property":"og:image","content":"https://mohabbeshier.github.io/omraa-store-preview/omraa-store-preview/og.png"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"الأمراء — أحذية نسائية بمقاسات من ٤١ إلى ٤٥"}],["$","meta","12",{"property":"og:type","content":"website"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"الأمراء — أحذية نسائية بمقاسات من ٤١ إلى ٤٥"}],["$","meta","15",{"name":"twitter:description","content":"جلد طبيعي، شحن لكل المحافظات، والدفع عند الاستلام."}],["$","meta","16",{"name":"twitter:image","content":"https://mohabbeshier.github.io/omraa-store-preview/omraa-store-preview/og.png"}],["$","link","17",{"rel":"icon","href":"/omraa-store-preview/favicon.png","sizes":"32x32","type":"image/png"}],["$","link","18",{"rel":"icon","href":"/omraa-store-preview/icon-192.png","sizes":"192x192","type":"image/png"}],["$","link","19",{"rel":"icon","href":"/omraa-store-preview/icon.svg","type":"image/svg+xml"}],["$","link","20",{"rel":"apple-touch-icon","href":"/omraa-store-preview/apple-icon.png"}],["$","$L25","21",{}]],"error":null,"digest":"$undefined"}
+24:"$20:metadata"
